@@ -75,4 +75,7 @@ for (var i = 1; i <= 100; i++) {
 			console.log("Coding");
 		}
 	}
+	else {
+		console.log(i);
+	}
 }
