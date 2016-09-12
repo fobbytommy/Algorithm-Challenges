@@ -111,13 +111,135 @@
 /* ========================================================================== */
 // Increment the Seconds
 
-function increment_seconds(arr) {
-	for (var i = 1, j = arr.length; i < j; i += 2) {
-		console.log(++arr[i]);
+// function increment_seconds(arr) {
+// 	for (var i = 1, j = arr.length; i < j; i += 2) {
+// 		console.log(++arr[i]);
+// 	}
+// 	return arr;
+// }
+// var arr = [2, 3, 6, 7, 1, -1];
+// console.log(increment_seconds(arr));
+
+/* ========================================================================== */
+// Previous Lengths
+
+// function pre_lengths(arr) {
+// 	var array_length = arr.length;
+//
+// 	if (array_length < 2) {
+// 		return null;
+// 	}
+// 	var temp = arr[array_length - 1];
+//
+// 	for (var i = array_length - 1; i > 0; i--) {
+// 		arr[i] = arr[i - 1].length;
+// 	}
+// 	arr[0] = temp.length;
+// }
+//
+// var arr = ['hello', 'hi', 'greetings'];
+// pre_lengths(arr);
+// console.log(arr);
+
+/* ========================================================================== */
+// Add Seven to Most
+
+// function seven_to_most(arr) {
+// 	var new_arr = [];
+// 	for (var i = 0, j = arr.length; i < j; i++) {
+// 		if (i == 0) {
+// 			new_arr.push(arr[i]);
+// 		}
+// 		else {
+// 			new_arr.push(arr[i] + 7);
+// 		}
+// 	}
+// 	return new_arr;
+// }
+//
+// var arr = [1, 2, 3, 4];
+// var result = seven_to_most(arr);
+// console.log(result);
+
+/* ========================================================================== */
+// Reverse Array
+
+// function reverse(arr) {
+// 	for (var i = 0, j = Math.floor(arr.length / 2); i < j; i++) {
+// 		var temp = arr[i];
+// 		arr[i] = arr[arr.length - 1 - i];
+// 		arr[arr.length - 1 - i] = temp;
+// 	}
+// 	return arr;
+// }
+//
+// var arr = [1, 2, 3, 4, 5];
+// console.log(reverse(arr));
+
+/* ========================================================================== */
+// Outlook: Negative
+
+// function negative(arr) {
+// 	var new_arr = [];
+// 	for (var i = 0, j = arr.length; i < j;  i++) {
+// 		new_arr.push(arr[i]);
+// 		if (new_arr[i] > 0) {
+// 			new_arr[i] *= -1;
+// 		}
+// 	}
+// 	return new_arr;
+// }
+// var arr = [1, -3, 5];
+// console.log(negative(arr));
+
+/* ========================================================================== */
+//  Always Hungry
+
+// function alwaysHungry(arr) {
+// 	var count = 0;
+// 	for (var i = 0, j = arr.length; i < j; i++) {
+// 		if (arr[i] === "food") {
+// 			console.log("yummy");
+// 			count++;
+// 		}
+// 	}
+// 	if (count === 0) {
+// 		console.log("I'm hungry");
+// 	}
+// }
+//
+// var arr = ["food", 1, 5, "food", "hi"];
+// var arr = ["ood", 1, 5, "foo", "hi"];
+// alwaysHungry(arr);
+
+/* ========================================================================== */
+//  Swap Toward the Center
+
+// function swapTowardtheCenter(arr) {
+// 	var array_length = arr.length;
+// 	for (var i = 0, j = Math.floor(array_length / 2); i < j; i++) {
+// 		if (i % 2 == 0) {
+// 			var temp = arr[i];
+// 			arr[i] = arr[array_length - 1 - i];
+// 			arr[array_length - 1 - i] = temp;
+// 		}
+// 	}
+// }
+// var arr = [true, 42, "Ada", 2, "pizza"];
+// var arr = [1, 2, 3, 4, 5, 6];
+// swapTowardtheCenter(arr);
+// console.log(arr);
+
+/* ========================================================================== */
+//  Scale the Array
+
+function scaleArray(arr, num) {
+	for (var i = 0, j = arr.length; i < j; i++) {
+		arr[i] *= num;
 	}
 	return arr;
 }
-var arr = [2, 3, 6, 7, 1, -1];
-console.log(increment_seconds(arr));
+var arr = [1, 2, 3, 4, 5, 6];
+console.log(scaleArray(arr, 2));
 
 /* ========================================================================== */
